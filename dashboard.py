@@ -19,7 +19,7 @@ import plotly.express as px
 
 def get_dataframe():
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-    KEY='AIzaSyDwHm39fC1PJzkwPTiaYumzPh8yIXKVbBU'
+    KEY= st.secrets["KEY"]
     
     discoveryUrl = ('https://sheets.googleapis.com/$discovery/rest?version=v4')
     service = discovery.build(
